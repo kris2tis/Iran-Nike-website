@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN-IN</title>
+    <link rel="stylesheet" href="/dude/style/Defaultclasses.css">
+    <link rel="stylesheet" href="/dude/style/sign.css">
+    <link rel="stylesheet" href="/dude/style/style.css">
+    <link rel="stylesheet" href="/dude/style/responsive.css">
+    <link rel="stylesheet" href="/dude/style/logIn.css">
+ 
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="container-form basic-flex u-padding">
+                <div id="step1" class="step getEmail basic-flex">
+                    <div class="nike-logo w-100">
+                       <img src="/home-iran-nike-picture/n-logo.png" alt="">
+                    </div>
+                    <div>
+                        <h2>ایمیل خود را وارد کنید تا به ما بپیوندید یا وارد شوید.</h2>
+                    </div>
+                    <div class="basic-flex w-100">
+                        <input class="input" id="Email" type="text" placeholder="ایمیل">
+                    </div>
+                    <div class="margin-20" >
+                        <span class="span-con"></span>
+                    </div>
+                    <div class="privacy w-100">
+                         در ادامه، من با نایک موافقم <a class="a-Privacy-p-T-S" href="#">سیاست حفظ حریم خصوصی </a><br>
+                         <a class="a-Privacy-p-T-S" href="#">شرایط استفاده . </a>
+                    </div>
+                    <div class="submit-e w-100">
+                        <button id="sendemail" onclick="nextstep(2)" class="btn margin-20">ادامه دادن</button>
+                    </div>
+                </div>
+
+                <div id="step2" class="step sign-in w-100">
+                    <div class="nike-logo w-100">
+                        <img src="/home-iran-nike-picture/n-logo.png" alt="">
+                     </div>
+                     <div class="right">
+                        <h2>حالا بیایید شما را عضو نایک کنیم.</h2>
+                    </div>
+                    <div class="margin-20">
+                        ما یک کد فرستادیم به<br>    
+                        <span class="sendmail-txt"></span>
+                        <button onclick="nextstep(1)" class="a-Privacy-p-T-S">تغییر</button>
+                    </div>
+                    <div class="form-container margin-30">
+                        <form id="sign-form" action="">
+                            <div class="cnt-f-inp column-flex">
+                                <div class="w-100">
+                                    <input class="input" id="code" type="text" placeholder="کد">
+                                </div>
+                                <div class="w-100">
+                                    <input class="last_first_usser input" type="text" id="userName" placeholder="نام کاربری">
+                                </div>
+                                <div class="cnt-fn-ln basic-flex w-100">
+                                    <div class="w-50">
+                                        <input class="last_first_usser input" type="text" placeholder="نام">
+                                    </div>
+                                    <div class="w-50">
+                                        <input class="last_first_usser input" type="text" placeholder="نام خانوادگی">
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <div class="cnt-pass input basic-flex w-100">
+                                        <div class="basic-flex cnt-password">
+                                            <input id="password" class="w-100" type="password" placeholder="رمزعبوز">
+                                        </div>
+                                        <div class="eye-icon basic-flex">
+                                            <div id="hide-password" type="button" class="basic-flex">
+                                               <img id="hide-password-icon" src="/home-iran-nike-picture/eye-on.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="cnt-password-terms" class="margin-20 column-flex w-100">
+                                        <span class="span-conditaion">رمز حداقل 8 کاراکتر باشد</span>
+                                        <span class="span-conditaion">حروف بزرگ، کوچک و یک عدد</span>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <button onclick=""  class="btn">ساخت اکانت</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "U-i16XnFsMQtAZO1Y",
+             });
+         })();
+    </script>
+    <script src="/dude/script/form.js" type="module"></script>
+</body>
+</html>
