@@ -1,0 +1,63 @@
+section .container{
+    width: 100%;
+    max-width: 480px;
+    margin-top: 40px;
+}
+
+section .container .container-form{
+    flex-direction: column;
+}
+
+section .container .container-form .getEmail {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nike-logo img{
+  width: 48px;
+}
+
+h2{
+    font-family: "bold";
+    font-weight: 500;
+    font-size: 28px !important;
+    text-align: right !important;
+}
+
+section .container .container-form .getEmail .input{
+    margin-top: 30px;
+}
+
+section .container .container-form .getEmail .privacy{
+    color: rgb(117, 117, 117);
+    margin-top: 25px;
+}
+
+section .container .sign-in{
+    margin-top: 40px;
+}
+
+section .container .sign-in .form-container .cnt-f-inp{
+    gap: 40px;
+}
+
+section .container .sign-in .form-container .cnt-f-inp .cnt-fn-ln{
+    gap: 20px;
+}
+
+section .container .sign-in .form-container #cnt-password-terms{
+    align-items: flex-start;
+    gap: 10px;
+}
+
+section .container .sign-in .form-container .cnt-f-inp .cnt-pass{
+    justify-content: space-between;
+}
+
+section .container .sign-in .form-container .cnt-f-inp .cnt-pass .cnt-password{
+    width: 95%;
+}
+
+section .container .sign-in .form-container .cnt-f-inp .eye-icon{
+    width: 5%;
+}
