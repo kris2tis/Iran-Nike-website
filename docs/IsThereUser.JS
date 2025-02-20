@@ -1,4 +1,4 @@
-import user from "../usser.js";
+import user from "./usser.js";
 
 export const IsThereUser = (ussername = "") =>{
     let isUder = false;
@@ -14,8 +14,4 @@ export const IsThereUser = (ussername = "") =>{
     
     return isUder
 }
-
-
-
 export default IsThereUser ; 
-

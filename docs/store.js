@@ -1,5 +1,5 @@
-import products from "../product.js";
-import header from "../header/header.js";
+import products from "../docs/product.js";
+import header from "../docs/header.js";
 
 header();
 

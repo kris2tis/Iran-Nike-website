@@ -1,6 +1,5 @@
-import { usser , adduser} from "./usser.js";
-import isThereUser  from "./CeckUser/IsThereUser.js";
-import IsTherePassword  from "./CeckUser/IsTherePassword.js";
+import {usser , adduser} from "./usser.js";
+import isThereUser  from "./IsThereUser.js";
 
 // STEP
 let step = 1 ;
@@ -37,11 +36,11 @@ let StateIcon = false;
 hide_password.addEventListener('click' , ()=>{
     StateIcon = !StateIcon;
     if(StateIcon){
-        hide_password_icon.src = "/home-iran-nike-picture/eye-off.png";
+        hide_password_icon.src = "eye-off.png";
         input_password.setAttribute('type' , 'text')
     }
     else{
-        hide_password_icon.src = "/home-iran-nike-picture/eye-on.png";
+        hide_password_icon.src = "eye-on.png";
         input_password.setAttribute("type" , "password")
     }
     

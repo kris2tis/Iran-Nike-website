@@ -1,21 +1,21 @@
 @font-face {
     font-family: "bold";
-    src: url(/font/IRANSansXFaNum-Bold.woff);
+    src: url(IRANSansXFaNum-Bold.woff);
 }
 
 @font-face {
     font-family: "regular";
-    src: url(/font/IRANSansXFaNum-Regular.woff);
+    src: url(IRANSansXFaNum-Regular.woff);
 }
 
 @font-face {
     font-family: "black";
-    src: url(/font/IRANYekanXVF.woff);
+    src: url(IRANYekanXVF.woff);
 }
 
 @font-face {
     font-family: "iran";
-    src: url(/font/IRAN_Black.ttf);
+    src: url(IRAN_Black.ttf);
 }
 
 .regular{
@@ -230,6 +230,9 @@ main .sec-1 .container .content-video-text .cnt-content-video-text h1 {
 
 main .sec-1 .container .content-video-text .cnt-content-video-text button{
     background-color: var(--bg-body-w-menu-i-o);
+}
+
+main .sec-1 .container .content-video-text .cnt-content-video-text button a {
     color: var(--main-bg-color);
 }
 
@@ -259,6 +262,10 @@ main .sec-3 .container .cnt-energy a h1 {
     font-family: "black";
     font-weight: 900;
     margin: 5px 0px 12px 0px;
+}
+
+main .sec-3 .container .cnt-energy .shop a{
+    color: var(--main-bg-color);
 }
 
 main .sec-5 .container{

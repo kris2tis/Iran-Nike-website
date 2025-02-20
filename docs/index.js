@@ -1,4 +1,4 @@
-import header from "./header/header.js";
+import header from "../docs/header.js";
 
 header();
 

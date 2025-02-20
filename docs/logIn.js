@@ -1,5 +1,5 @@
-import IsTherePassword from "./CeckUser/IsTherePassword.js";
-import LoginSestion from "./LoginSestion.js";
+import IsTherePassword from "../docs/IsTherePassword.js";
+import LoginSestion from "../docs/LoginSestion.js";
 
 const logIn_btn = document.getElementById("logIn-btn");
 logIn_btn.addEventListener('click' , ()=>{

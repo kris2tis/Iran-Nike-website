@@ -1,4 +1,4 @@
-import user from "../usser.js";
+import user from "usser.js";
 
 export const IsTherePassword = (ussername = "" , passwword = "") =>{
     let isUder = false;

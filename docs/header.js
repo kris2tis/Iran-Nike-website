@@ -4,7 +4,6 @@ export function header() {
     const close_menu = document.querySelector('#close');
     const overly = document.querySelector('.overley');
     const dropdown = document.querySelectorAll('.p-title-category');
-
     //Mobile Menu
 
     open_mneu.addEventListener('click' , ()=>{
