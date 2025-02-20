@@ -1,4 +1,4 @@
-import header from "../docs/header.js";
+import header from "./header.js";
 
 header();
 
@@ -78,12 +78,3 @@ document.querySelectorAll('.title-f').forEach(header =>{
 
 
 // Log in usser
-
-const Userlogin = JSON.parse(localStorage.getItem("loged in"))?.username;
-
-if(Userlogin){
-    
-    
-}
-
-
