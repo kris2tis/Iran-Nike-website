@@ -208,6 +208,6 @@ from.addEventListener('submit' , (e)=>{
     }
 
     else{
-        console.log("نتوانستید ثبت نام کنید");
+        alert("نتوانستید ثبت نام کنید");
     }
 })
