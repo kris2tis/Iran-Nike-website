@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRAN-NIKE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="Defaultclasses.css">
+    <link rel="stylesheet" href="/main/style/style.css">
+    <link rel="stylesheet" href="/main/style/Defaultclasses.css">
+    <link rel="stylesheet" href="/main/style/responsive.css">
 </head>
 <body>
     <!-- header -->
@@ -43,15 +43,15 @@
                                 <div class="vertical-line"></div>
                             </li>
 
-                            <li class="basic-flex">
-                                <a href="signIn.html">
+                            <li class="basic-flex sign-desktop">
+                                <a href="/main/html/account/signIn.html">
                                     <p>ملحق شوید</p>
                                 </a>
                                 <div class="vertical-line"></div>
                             </li>
 
-                            <li class="basic-flex">
-                                <a href="logIn.html">
+                            <li class="basic-flex sign-desktop">
+                                <a href="/main/html/account/logIn.html">
                                     <p>ورود</p>
                                 </a>
                             </li>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="main-header basic-flex u-padding">
-                <div class="fa-ca-sa basic-flex">
+                <div id="dynamicHeaderContent" class="fa-ca-sa basic-flex">
                     <div class="mobile-menu basic-gray">
                         <a href="#" class="basic-flex">
                             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M21 5.25H3M21 12H3m18 6.75H3"></path>
@@ -74,17 +74,18 @@
                         </svg>
                         </a>
                     </div>
-                    <div class="cart basic-gray">
+                    <!-- <div class="cart basic-gray">
                         <a href="#" class="basic-flex">
                             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"></path></svg>
                         </a>
-                    </div>
-                    <div class="signin-signup basic-gray">
+                        <div class="count-of-prodict-cart basic-flex"></div>
+                    </div> -->
+                    <!-- <div class="signin-signup basic-gray">
                         <a href="signIn.html" class="basic-flex">
                             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.75 21v-3a3.75 3.75 0 013.75-3.75h9A3.75 3.75 0 0120.25 18v3M12 3.75a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z"></path>
                             </svg>
                         </a>
-                    </div>
+                    </div> -->
                     <div class="input-search-icon basic-flex">
                         <div class="cnt-search-icon basic-flex basic-gray">
                             <svg  aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="28px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"></path>
@@ -96,7 +97,7 @@
                 <div class="cnt-desktop-category">
                     <ul class="desktop-category basic-flex">
                         <li>
-                            <a href="store.html">فروشگاه</a>
+                            <a href="/main/html/store.html">فروشگاه</a>
                         </li>
                         <li>
                             <a href="#">مردان</a>
@@ -113,7 +114,7 @@
                     </ul>
                 </div>
                 <div class="nike-logo basic-flex">
-                    <a aria-label="Nike Homepage" class="swoosh-link" data-testid="link" href="index.html"><svg aria-hidden="true" class="swoosh-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path>
+                    <a aria-label="Nike Homepage" class="swoosh-link" data-testid="link" href="/main/html/index.html"><svg aria-hidden="true" class="swoosh-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
                 </div>
@@ -126,7 +127,7 @@
                     <div class="main-menu-wrapper right">
                         <ul class="cnt-main-menu column-flex">
                             <li>
-                                <h3 class="text-right"><a href="store.html">فروشگاه</a></h3>
+                                <h3 class="text-right"><a href="/main/html/store.html">فروشگاه</a></h3>
                             </li>
                             <li>
                                 <h3 class="text-right"><a href="#">مردان</a></h3>
@@ -162,12 +163,15 @@
                                 برای دریافت بهترین محصولات، الهامات و داستان های ورزشی، عضو نایک شوید. <a href="">بیشتر بدانید</a>
                             </h4>
                         </div>
-                        <div class="btns">
-                            <a href="logIn.html">
-                                <button class="sign-in btn">وارد شوید</button>
+                        <div class="btns right">
+                            <a href="/main/html/account/logIn.html">
+                                <button class="sign-in btn sign-desktop">وارد شوید</button>
                             </a>
-                            <a href="signIn.html">
-                                 <button class="sign-up btn">عضو شوید</button>
+                            <a href="/main/html/account/signIn.html">
+                                 <button class="sign-up btn sign-desktop">عضو شوید</button>
+                            </a>
+                            <a href="#">
+                                <button onclick="quitAccountUsser()" class="quit-account btn">خروج از حساب</button>
                             </a>
                         </div>
                     </div>
@@ -211,7 +215,7 @@
                     <div class="cnt-video-player basic-flex">
                         <a href="#">
                             <video class="video-player basic-flex" autoplay muted loop>
-                                <source src="Nike Just Do It Nike NL.mp4" type="video/mp4">
+                                <source src="/main/assest/video/Nike Just Do It Nike NL.mp4" type="video/mp4">
                               </video>
                         </a>
                     </div>
@@ -223,7 +227,7 @@
                             </div>
                             <div>
                                 <button class="btn">
-                                    <a href="store.html">فروشگاه</a>
+                                    <a href="/main/html/store.html">فروشگاه</a>
                                 </button>
                             </div>
                         </div>
@@ -238,14 +242,14 @@
                            <div>
                                 <figure>
                                     <div class="bg-imagae">
-                                        <img src="sec-2-1.jpg" alt="">
+                                        <img src="/main/assest/picture/sec-2-1.jpg" alt="">
                                     </div>
                                     <figcaption>
                                         <div class="cnt-cap">
                                             <p class="main-color-w">تبریک مدیسون کیز</p>
                                             <h3 class="main-color-w">یک شبه اتفاق نمی افتد. تا زمانی که انجام شود.</h3>
                                             <button class="btn main-color-w bg-w-c-btn1">
-                                                <a href="/dude/html/store.html">فروشگاه</a>
+                                                <a href="/main/html/store.html">فروشگاه</a>
                                              </button>
                                         </div>
                                     </figcaption>
@@ -255,14 +259,14 @@
                            <div>
                                 <figure>
                                     <div class="bg-imagae">
-                                         <img src="sec-2-2.jpg" alt="">
+                                         <img src="/main/assest/picture/sec-2-2.jpg" alt="">
                                     </div>
                                     <figcaption>
                                          <div class="cnt-cap">
                                              <p class="main-color-w">ملزومات برای هر مایل شما</p>
                                              <h3 class="main-color-w">آماده دویدن</h3>
                                              <button class="btn main-color-w bg-w-c-btn1">
-                                                <a href="/dude/html/store.html">فروشگاه</a>
+                                                <a href="/main/html/store.html">فروشگاه</a>
                                              </button>
                                          </div>
                                     </figcaption>
@@ -271,14 +275,14 @@
                             <div>
                                 <figure>
                                     <div class="bg-imagae">
-                                         <img src="sec-2-3.jpg" alt="">
+                                         <img src="/main/assest/picture/sec-2-3.jpg" alt="">
                                     </div>
                                     <figcaption>
                                          <div class="cnt-cap">
                                              <p class="main-color-w">با برنده شدن راحت باشید</p>
                                              <h3 class="main-color-w">سوتین نایک</h3>
                                              <button class="btn main-color-w bg-w-c-btn1">
-                                                <a href="/dude/html/store.html">فروشگاه</a>
+                                                <a href="/main/html/store.html">فروشگاه</a>
                                              </button>
                                          </div>
                                     </figcaption>
@@ -287,14 +291,14 @@
                             <div>
                                 <figure>
                                     <div class="bg-imagae">
-                                         <img src="sec-2-4.jpg" alt="">
+                                         <img src="/main/assest/picture/sec-2-4.jpg" alt="">
                                     </div>
                                     <figcaption>
                                          <div class="cnt-cap">
                                              <p class="main-color-w">انرژی دیوانه را نمی توان متوقف کرد</p>
                                              <h3 class="main-color-w">کفش های جدید Nike</h3>
                                              <button class="btn main-color-w bg-w-c-btn1">
-                                                <a href="/dude/html/store.html">فروشگاه</a>
+                                                <a href="/main/html/store.html">فروشگاه</a>
                                              </button>
                                          </div>
                                     </figcaption>
@@ -316,7 +320,7 @@
                             </div>
                             <div class="shop basic-flex margin-20">
                                 <button class="btn">
-                                    <a href="store.html">فروشگاه</a>
+                                    <a href="/main/html/store.html">فروشگاه</a>
                                 </button>
                             </div>
                         </a>
@@ -329,7 +333,7 @@
                     <div class="cnt-bg-img">
                         <a href="#">
                             <figure>
-                                <img src="sec-4-bg-img.jpg" alt="بک گراند نایک">
+                                <img src="/main/assest/picture/sec-4-bg-img.jpg" alt="بک گراند نایک">
                             </figure>
                         </a>
                     </div>
@@ -344,25 +348,25 @@
                     <div class="container-s-b basic-flex">
                         <div id="cnt-scrool-bar" class="cnt-scrool-bar">
                             <div class="product-scrool">
-                                <img src="nike-just-do-it (13).jpg" alt="">
+                                <img src="/main/assest/picture/nike-just-do-it (13).jpg" alt="">
                             </div>
                             <div class="product-scrool">
-                                <img src="nike-just-do-it (14).jpg" alt="">
+                                <img src="/main/assest/picture/nike-just-do-it (13).jpg" alt="">
                             </div>
                             <div class="product-scrool">
-                                <img src="nike-just-do-it (15).jpg" alt="">
+                                <img src="/main/assest/picture/nike-just-do-it (14).jpg" alt="">
                             </div>
                             <div class="product-scrool">
-                                <img src="nike-just-do-it (19).jpg" alt="">
+                                <img src="/main/assest/picture/nike-just-do-it (15).jpg" alt="">
                             </div>
                             <div class="product-scrool">
-                                <img src="nike-just-do-it (16).jpg" alt="">
+                                <img src="/main/assest/picture/nike-just-do-it (16).jpg" alt="">
                             </div>
                             <div class="product-scrool">
-                                <img src="nike-just-do-it (17).jpg" alt="">
+                                <img src="/main/assest/picture/nike-just-do-it (17).jpg" alt="">
                             </div>
                             <div class="product-scrool">
-                                <img src="nike-just-do-it (18).jpg" alt="">
+                                <img src="/main/assest/picture/nike-just-do-it (18).jpg" alt="">
                             </div>
                         </div>
                         
@@ -385,15 +389,15 @@
                 <div class="container u-padding">
                     <div class="cnt-nike-p basic-flex">
                         <div class="nike-nike-l">
-                            <img src="nike-lwebp.webp" alt="">
+                            <img src="/main/assest/picture/nike-lwebp.webp" alt="">
                         </div>
                         <div class="nike-servises w-100">
                             <nav>
                                 <ul class="basic-flex">
                                     <li><a href="#">یافتن فروشگاه</a></li>
                                     <li><a href="#">کمک</a></li>
-                                    <li><a href="#">وارد شوید</a></li>
-                                    <li><a href="#">ثبت نام کنید</a></li>
+                                    <li><a href="/main/html/account/logIn.html">وارد شوید</a></li>
+                                    <li><a href="/main/html/account/signIn.html">ثبت نام کنید</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -631,6 +635,6 @@
             </section>
       </main>
      <!-- ///////    //////// -->
-    <script type="module" src="index.js"></script>
+    <script type="module" src="/main/script/index.js"></script>
 </body>
 </html>

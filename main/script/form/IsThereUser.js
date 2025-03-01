@@ -1,17 +1,17 @@
-import user from "./usser.js";
+import user from "../utils/usser.js";
 
-export const IsThereUser = (ussername = "") =>{
+export const IsThereUser = (ussername = "") => {
     let isUder = false;
-    
+
     user.forEach(user => {
-        
+
         if (user.username == ussername) {
             isUder = true;
             return
         }
-        
+
     });
-    
+
     return isUder
 }
-export default IsThereUser ; 
+export default IsThereUser; 

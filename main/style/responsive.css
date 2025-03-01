@@ -197,6 +197,11 @@
 }
 
 @media screen and (max-width :580px) {
+
+    .btn{
+        font-size: 8px;
+    }
+
     main .sec-2 .container .cnt-cat .cnt-category-products{
         grid-template-columns: 1fr;
     }
