@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 else {
                     // منتقل کردن کاربر اگر وارد نشده بود
-                    window.location.href = "/main/html/account/login.html"
+                    window.location.href = "login.html"
                 }
             })
         });
