@@ -2,7 +2,7 @@ import { usser, adduser } from "../utils/usser.js";
 import isThereUser from "../form/IsThereUser.js";
 import LoginSestion from "../form/LoginSestion.js";
 
-// STEP
+// فرم ثبت نام قدم به قدم 
 let step = 1;
 let checCode, checmail, checkPass, checkFL = false;
 
@@ -24,13 +24,10 @@ function nextstep(nstep) {
 
 window.nextstep = nextstep;
 
-// HIDE PASSWORD
-
+// پنهان کردن اینپوت پسفورد
 const hide_password = document.getElementById("hide-password");
 const hide_password_icon = document.getElementById("hide-password-icon");
 const input_password = document.getElementById("password");
-
-
 
 let StateIcon = false;
 
@@ -48,16 +45,12 @@ hide_password.addEventListener('click', () => {
 })
 
 
-// INPUT CONDITION
-
+// ایجاد قوانین اینپوت ها
 const email = document.getElementById('Email');
 const span = document.querySelector('.span-con')
 const spans = document.querySelectorAll('.span-conditaion');
 const input_email_conditions = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 let Input_pass_conditions = /^(?=.*[A-Z])(?=.*[0-9]).*$/;
-
-
-
 
 email.addEventListener('blur', () => {
     if (input_email_conditions.test(email.value) == false) {
@@ -101,16 +94,13 @@ input_password.addEventListener('blur', () => {
         document.querySelector('.cnt-pass').classList.remove('red');
     }
 })
-//
-
 
 const mail_txt = document.querySelector(".sendmail-txt");
 mail_txt.textContent = email.value;
 
 
 
-// SEND EMAIL CODE
-
+// تابع ارسال ایمیل به گاربر
 const sendemail = document.getElementById('sendemail');
 let verificationCode;
 
@@ -132,10 +122,8 @@ function sendmailto() {
         .catch((err) => console.log(err));
 }
 
-// CHECK CODE
-
+// چک کردن کد نوشته شده
 const input_code = document.getElementById("code");
-
 
 input_code.addEventListener('blur', () => {
 
@@ -148,8 +136,7 @@ input_code.addEventListener('blur', () => {
 
 })
 
-// RED INPUT
-
+// نغییر رنگ اینپوت در صورت بروز خطا
 const inputs = document.querySelectorAll('input');
 
 function red(event) {
@@ -167,8 +154,7 @@ inputs.forEach(input => {
     input.addEventListener('blur', red)
 });
 
-// CHECK F-N L-N
-
+// چک کردن اینپوت نام و نام خانوادگی در صورت بروز خطا
 const fNamelName = document.querySelectorAll(".last_first_usser");
 
 function checkName(event) {
@@ -187,8 +173,7 @@ fNamelName.forEach(inp => {
     inp.addEventListener('blur', checkName)
 });
 
-// SIGN IN
-
+// ثبت نام کاربر
 const from = document.getElementById("sign-form");
 
 from.addEventListener('submit', (e) => {

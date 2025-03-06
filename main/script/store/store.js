@@ -5,11 +5,9 @@ import productCart from "./cratProdcut.js";
 import quitAccount from "../utils/utils.js";
 import footer from "../utils/footer.js";
 
-
 header();
 footer();
 usserLogged()    
-
 
 window.quitAccountUsser = quitAccount;
 

@@ -3,11 +3,9 @@ import usserLogged from "./form/doesUsserLogged.js";
 import quitAccount from "./utils/utils.js";
 import footer from "./utils/footer.js";
 
-
 header();
 footer();
 usserLogged()    
-
 
 window.quitAccountUsser = quitAccount;
 
@@ -31,6 +29,3 @@ function prev() {
 function TrasnformX(value) {
     scroolbar.style.transform = `translate3d(${value}px, 0px, 0px)`
 }
-
-
-

@@ -13,7 +13,6 @@ export const footer = () => {
         runDropDown();
     }
 
-
     function runDropDown() {
         dropdown.forEach(Item => {
             Item.addEventListener('click', () => {

@@ -15,7 +15,7 @@ export function usserLogged() {
                 <div class="count-of-prodict-cart basic-flex">${cartProduct.length}</div>
                 </div>`
             )
-            console.log("object");
+
             const contOfProductLength = document.querySelector(".count-of-prodict-cart");
             contOfProductLength.textContent = JSON.parse(localStorage.getItem("loged in"))?.cart.length;
 

@@ -1,7 +1,6 @@
 import IsTherePassword from "./IsTherePassword.js";
 import LoginSestion from "./LoginSestion.js";
 
-
 const logIn_btn = document.getElementById("logIn-btn");
 logIn_btn.addEventListener('click' , ()=>{
     
@@ -12,7 +11,6 @@ logIn_btn.addEventListener('click' , ()=>{
 
     let existingUser = Object.values(users).find(user => user.username  === username)
     userCart = existingUser?.cart || [];
-
 
     if (IsTherePassword(username,password)) {
         alert(`خوش برگشتی ${username}`);
@@ -41,5 +39,3 @@ function red (e){
 inputs.forEach(input => {
     input.addEventListener('blur' , red)
 });
-
-

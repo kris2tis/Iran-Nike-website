@@ -11,5 +11,4 @@ export let products = [
    { imageUrl : "/main/assest/picture/nike-10.jpg" , slogan : "Best seler" , name: "Nike Vertebere" , cat : "Men's shoes" , price : "50" , date : "10" , id : "10"}
 ]
 
-
 export default products;
