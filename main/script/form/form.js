@@ -192,7 +192,7 @@ from.addEventListener('submit', (e) => {
             adduser({ username, password, cart: userCart });
             alert("خوش آمدید");
             LoginSestion(username, userCart);
-            location.href = "/main/html/index.html"
+            location.href = "index.html"
         }
         else {
             alert("قبلا یک کاربر با این اسم ثبت نام کرده")
