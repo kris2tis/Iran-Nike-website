@@ -555,3 +555,101 @@ main .sec-7 .container .footer-copy-right{
     gap: 15px;
     margin-top: 40px;
 }
+
+/* FILTER OVERLEY */
+
+
+/* cart */
+.sec-9 .container {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.sec-9 .container .cart-container{
+    height: 100vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.sec-9 .container .cart-container .products-container{
+    row-gap: 30px;
+    width: 50%;
+}
+
+.sec-9 .container .cart-container .products-container .product-head h3{
+    text-align: right;
+    font-weight: 700;
+}
+
+.sec-9 .container .cart-container .products-container .products{
+    row-gap: 30px;
+    width: 100%;
+}
+
+.sec-9 .container .cart-container .products-container .products .cart{
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 30px;
+    border-inline: 1px solid #02030275; 
+    border-top: 0;
+    border-bottom: 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+
+.sec-9 .container .cart-container .products-container .products .cart .prodocut-delete-icon:hover{
+    fill: red;
+    cursor: pointer;
+}
+
+.sec-9 .container .cart-container .products-container .products .cart img {
+    width: 140px;
+}
+
+.sec-9 .container .cart-container .products-container .products .cart .info-product{
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 6px;
+}
+
+.sec-9 .container .cart-container .products-container .products .cart .info-product h5{
+    font-weight: 600;
+}
+
+.sec-9 .container .cart-container .information-container{
+   width: 40%;
+   height: max-content;
+   row-gap: 30px;
+}
+
+.sec-9 .container .cart-container .information-container .info-head h3{
+    font-weight: 700;
+}
+
+.sec-9 .container .cart-container .information-container .information {
+    row-gap: 12px;
+}
+
+.sec-9 .container .cart-container .information-container .information .info-p{
+    justify-content: space-between;
+}
+
+.sec-9 .container .cart-container .information-container .checkout-container-desktop{
+    margin-top: 40px;
+}
+
+.sec-9 .container .cart-container .information-container .paypal-container button img{
+    margin-inline: auto;
+}
+
+.sec-9 .container .cart-container .information-container .information .fixed-checkout-btn{
+    display: none;
+    position: fixed;
+    height: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.312);
+    bottom: 0;
+    width: 100%;
+    background: var(--bg1-color);
+}
