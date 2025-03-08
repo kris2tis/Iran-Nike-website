@@ -78,13 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
     
                 <div>
-                    <button data-DT="${[prdcts.id, prdcts.imageUrl, prdcts.name, prdcts.cat]}" class="addTocart btn">${usserLoggedIn ? "افزون به سبد" : "ورود برای خرید"}</button>
+                    <button data-DT="${[prdcts.id, prdcts.imageUrl, prdcts.name, prdcts.cat , prdcts.price]}" class="addTocart btn">${usserLoggedIn ? "افزون به سبد" : "ورود برای خرید"}</button>
                 </div>
                 </div>
                 </div>
                 `
         });
-
+        
         document.querySelectorAll(".addTocart").forEach(addBtn => {
             addBtn.addEventListener("click", (e) => {
                 if (usserLoggedIn) {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     let getDT = e.target.getAttribute("data-DT");
 
                     // اضافه کردن محصول مورد نظر به آرایه 
-                    productCart.push(getDT);
+                    productCart(getDT);
                 }
                 else {
                     // منتقل کردن کاربر اگر وارد نشده بود
