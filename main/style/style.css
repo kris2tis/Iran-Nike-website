@@ -566,7 +566,7 @@ main .sec-7 .container .footer-copy-right{
 }
 
 .sec-9 .container .cart-container{
-    height: 100vh;
+    height: max-content;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 80px;
