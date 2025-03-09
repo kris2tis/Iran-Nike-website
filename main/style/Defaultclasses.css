@@ -13,6 +13,10 @@ button,input {
     cursor: pointer;
 }
 
+.Advertising-photos{
+    font-family: "black";
+}
+
 input::-ms-clear {
     display: none;
 }
