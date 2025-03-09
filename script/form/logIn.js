@@ -15,7 +15,7 @@ logIn_btn.addEventListener('click' , ()=>{
     if (IsTherePassword(username,password)) {
         alert(`خوش برگشتی ${username}`);
         LoginSestion(username,userCart)
-        location.href = "../html/index.html"
+        location.href = "../index.html"
     }
     else{
         alert("حسابی با این نام کاربری پیدا نشد ");
