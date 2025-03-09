@@ -1,21 +1,21 @@
 @font-face {
     font-family: "bold";
-    src: url(/main/assest/font/IRANSansXFaNum-Bold.woff);
+    src: url(../assest/font/IRANSansXFaNum-Bold.woff);
 }
 
 @font-face {
     font-family: "regular";
-    src: url(/main/assest/font/IRANSansXFaNum-Regular.woff);
+    src: url(../assest/font/IRANSansXFaNum-Regular.woff);
 }
 
 @font-face {
     font-family: "black";
-    src: url(/main/assest/font/IRANYekanXVF.woff);
+    src: url(../assest/font/IRANYekanXVF.woff);
 }
 
 @font-face {
     font-family: "iran";
-    src: url(/main/assest/font/IRAN_Black.ttf);
+    src: url(../assest/font/IRAN_Black.ttf);
 }
 
 .regular{
