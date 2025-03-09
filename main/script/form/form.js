@@ -34,11 +34,11 @@ let StateIcon = false;
 hide_password.addEventListener('click', () => {
     StateIcon = !StateIcon;
     if (StateIcon) {
-        hide_password_icon.src = "/main/assest/picture/eye-off.png";
+        hide_password_icon.src = "../assest/picture/eye-off.png";
         input_password.setAttribute('type', 'text')
     }
     else {
-        hide_password_icon.src = "/main/assest/picture/eye-on.png";
+        hide_password_icon.src = "../assest/picture/eye-on.png";
         input_password.setAttribute("type", "password")
     }
 
@@ -192,7 +192,7 @@ from.addEventListener('submit', (e) => {
             adduser({ username, password, cart: userCart });
             alert("خوش آمدید");
             LoginSestion(username, userCart);
-            location.href = "index.html"
+            location.href = "../index.html"
         }
         else {
             alert("قبلا یک کاربر با این اسم ثبت نام کرده")
