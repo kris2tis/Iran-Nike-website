@@ -4,7 +4,14 @@ export function header() {
     const close_menu = document.querySelector('#close');
     const overly = document.querySelector('.overley');
     const dropdown = document.querySelectorAll('.p-title-category');
+    const daynamicStoreSrc = document.getElementById("storeSRC");
 
+    if (window.location.pathname == "/Iran-Nike-website/html/store.html") {
+        daynamicStoreSrc.style.display = "none";
+    } else if (window.location.pathname == "/Iran-Nike-website/html/cart.html") {
+    const daynamicStoreSrc = document.getElementById("storeSRC");
+        daynamicStoreSrc.setAttribute("href" , "./store.html")
+    }
     //منو موبایل
     open_mneu.addEventListener('click', (event) => {
         containerMenu.classList.add('show');
